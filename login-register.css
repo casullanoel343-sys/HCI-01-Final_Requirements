@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #e4e4e4;
+    background: url(resources/background/aesthetic-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 97%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    width: 330px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(156, 105, 90, 0.61);
+}
+
+.input-box { /* mga line */
+    position: relative;
+    border-bottom: 1.5px solid #e4e4e4;
+    margin: 20px 10px;
+    width: 310px;
+    height: 45px;
+}
+
+.input-box input { /* input box */
+    width: 90%;
+    height: 125%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #e4e4e4;
+    font-size: 14px;
+    padding-right: 40px;
+}
+
+.input-box label {  /* Email Password Label */
+    position: absolute;
+    top: 40%;
+    left: 2px;
+    transform: translate(-0%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 15px;
+}
+
+
+/* REMEMBER - AGREE */
+.remember-agree {
+    font-size: 12px;
+    display: flex;
+}
+.remember-agree label input {  /* Checkbox */
+    accent-color: #e4e4e4;
+    margin-right: 5px;
+}
+.remember-agree input {
+    margin-left: 10px;
+}
+
+
+/* BUTTON */
+.button {
+    width: 100%;
+    height: 40px;
+    background: #e4e4e4;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 0 7px rgb(176, 128, 86);
+    margin-top: 20px;
+}
+.button:hover {
+    background: #56422ac3;
+    color: #e4e4e4;
+}
+
+
+/* DON'T/ALREADY HAVE AN ACCOUNT */
+.switch {
+    font-size: 13px;
+    margin-top: 25px;
+}
+.switch p a {   /* Sign in button */
+    color: #e4e4e4;
+    font-weight: 700;
+    text-decoration: none;
+}
+.switch p a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title> SignIn-SignUp </title>
+
+        <link rel="stylesheet" href="login-register.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- Sign Up Form -->
+        <div class="container" id="signup-container">
+            <h2> Sign Up </h2>
+
+            <div class="input-box">
+                <span class="icon"> <i class='bx bxs-user'></i> </span>
+                <input type="text" id="signup-name" required>
+                <label> Name </label>
+            </div>
+            <div class="input-box">
+                <span class="icon"> <i class='bx bxs-envelope'></i> </span>
+                <input type="text" id="signup-email" required>
+                <label> Email </label>
+            </div>
+            <div class="input-box">
+                <span class="icon"> <i class='bx bxs-lock-alt'></i> </span>
+                <input type="password" id="signup-password" required>
+                <label> Password </label>
+            </div>
+            <div class="remember-agree">
+                <label> <input type="checkbox"> I agree to the terms & conditions. </label>
+            </div>
+            
+            <button type="button" onclick="signUp()" class="button"> Sign Up </button>
+
+            <div class="switch">
+                <p onclick="showSignIn()"> Already have an account? <a> Sign In </a></p>
+            </div>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="container hidden" id="signin-container">
+            <h2> Sign In </h2>
+
+            <div class="input-box">
+                <span class="icon"> <i class='bx bxs-envelope'></i> </span>
+                <input type="text" id="signin-email" required>
+                <label> Email </label>
+            </div>
+            <div class="input-box">
+                <span class="icon"> <i class='bx bxs-lock-alt'></i> </span>
+                <input type="password" id="signin-password" required>
+                <label> Password </label>
+            </div>
+            <div class="remember-agree">
+                <label> <input type="checkbox"> Remember me </label>
+            </div>
+
+            <button type="button" onclick="signIn()" class="button"> Sign In </button>
+
+            <div class="switch">
+                <p onclick="showSignUp()"> Don't have an account? <a> Sign Up </a></p>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

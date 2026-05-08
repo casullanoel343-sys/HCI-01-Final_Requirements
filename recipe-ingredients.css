@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(resources/background/black-vintage-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 330vh;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.recipe-container .path {
+    font-size: 15px;
+    color: #acacac;
+    margin-bottom: 40px;
+}
+.recipe-container i {
+    font-size: 20px;
+    margin-top: 3px;
+    color: #555555;
+}
+.recipe-container a {
+    text-decoration: none;
+    color: #555555;
+}
+.recipe-container a:hover {
+    text-decoration: underline;
+}
+
+/* --- Header Styling --- */
+.recipe-header {
+    text-align: center;
+    border-bottom: 3px solid #800020; /* A rich purple/adobo color */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-header h1 {
+    color: #800020;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.byline {
+    color: #888;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* --- Section Titles --- */
+.section-title {
+    color: #800020;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* --- Ingredients Styling --- */
+.ingredient-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredient-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.ingredient-item:last-child {
+    border-bottom: none;
+}
+
+.ingredient-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #800020;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    top: -1px;
+}
+
+.ingredient-item input[type="checkbox"]:checked {
+    background-color: rgb(215, 185, 60);
+}
+
+.ingredient-item input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ingredient-item label {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.ingredient-item input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+/* --- Instructions Styling --- */
+.instruction-list {
+    list-style: none;
+    padding: 0;
+}
+
+.instruction-step {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.step-number {
+    flex-shrink: 0;
+    background-color: #800020;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.instruction-step p {
+    margin: 0;
+    line-height: 1.5;
+}
